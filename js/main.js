@@ -124,11 +124,11 @@ else{
 }
 
 elBookmarkWrapper.addEventListener("click", function(evt){
-    let movieID = evt.target.dataset.moreInfoBtnId;
+    let bookID = evt.target.dataset.moreInfoBtnId;
 
-    if (movieID) {
+    if (bookID) {
         
-        let foundBook = normolizeMovies.find(item => item.id == movieID)
+        let foundBook = normolizeMovies.find(item => item.id == bookID)
 
         let checkInclude = bookmarkBooks.findIndex(item =>   item.id === foundBook.id
         )
