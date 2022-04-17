@@ -17,7 +17,7 @@
                         <img class="header__logo-image" src="./images/logo-site.svg" alt="Book shalter logo" width="226" height="44">
                     </a>
                     
-                    <form class="header__form">
+                    <form class="header__form" action="https://htmlacademy.ru/">
                         <div class="input-group ">
                             <input class="header__search-logo form-control " id="search_input" type="text"  placeholder="Search books">
                         </div>
@@ -39,7 +39,7 @@
                 
                 <button type="button" class="hero__btn btn btn-secondary">
                     <img class="hero__btn-image"  src="./images/calendar.svg" style="vertical-align: middle;"  alt=""> 
-                    <p class="hero__btn-text p-0 m-0"> Order by newest</p> 
+                    <span class="hero__btn-text p-0 m-0"> Order by newest</span> 
                 </button>
                 
             </div>
@@ -54,43 +54,14 @@
                 
                 <div class="bookmark__books">
                     <div class="bookmark__inner">
-                        <div class="bookmark__text-wrapper">
-                            <p class="bookmark__book-name">Python</p>
-                            <p class="bookmark__outhor-name">David M. Beazley</p>
-                        </div>
                         
-                        <div class="bookmark__image-wrapper">
-                            <button class="bookmark__book-btn" type="button">
-                                <img class="bookmark__book-image" width="24" height="24" src="./images/book.svg" alt="">
-                            </button>
-                            
-                            <button class="bookmark__delete-btn d-inline-block" type="button">
-                                <img class="bookmark__delete-image" width="24" height="24" src="./images/delete.svg" alt="">
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="books-market">
                 <div class="books-market__top d-flex row gap-4 ">
-                    <div class="books-market__wrapper col-4">
-                        <div class="books-market__image-wrapper">
-                            <img class="books-market__book-image" src="https://picsum.photos/200/200" alt="">
-                        </div>
-                        
-                        <div class="books-market__info-books">
-                            <p class="books-market__book-name">Python</p>
-                            <p class="books-market__book-outhor">David M. Beazley</p>
-                            <p class="books-market__book-year">2009</p>
-                        </div>
-                        
-                        <div class="books-market__btn row gap-1">
-                            <button type="button" class="btn btn-warning col">Bookmark</button>
-                            <button type="button" class="btn btn-light col " data-bs-toggle="modal" data-bs-target="#myModal" style="color: #0D75FF;">More info</button>
-                            <button type="button" class="btn btn-secondary col-12 ">Read</button>
-                        </div>
-                    </div>
+                    
                     
                 </div>
                 
@@ -165,14 +136,14 @@
     <template id="bookmark-template">
         <div class="bookmark__inner">
             <div class="bookmark__text-wrapper">
-                <p class="bookmark__book-name">Python</p>
-                <p class="bookmark__outhor-name">David M. Beazley</p>
+                <p class="bookmark__book-name"></p>
+                <p class="bookmark__outhor-name"></p>
             </div>
             
             <div class="bookmark__image-wrapper">
-                <button class="bookmark__book-btn" type="button">
+                <a href="" class="bookmark__book-href" type="button">
                     <img class="bookmark__book-image" width="24" height="24" src="./images/book.svg" alt="">
-                </button>
+                </a>
                 
                 <button class="bookmark__delete-btn d-inline-block" type="button">
                     <img class="bookmark__delete-image" width="24" height="24" src="./images/delete.svg" alt="">
@@ -182,21 +153,21 @@
     </template>
     
     <template id="books-market-template">
-        <div class="books-market__wrapper col-4">
+        <div class="books-market__wrapper col-4 " >
             <div class="books-market__image-wrapper">
-                <img class="books-market__book-image" src="https://picsum.photos/200/200" alt="">
+                <img class="books-market__book-image" src="" alt="">
             </div>
             
-            <div class="books-market__info-books">
-                <p class="books-market__book-name">Python</p>
-                <p class="books-market__book-outhor">David M. Beazley</p>
-                <p class="books-market__book-year">2009</p>
+            <div class="books-market__info-books flex-grow-1">
+                <p class="books-market__book-name"></p>
+                <p class="books-market__book-outhor"></p>
+                <p class="books-market__book-year"></p>
             </div>
             
-            <div class="books-market__btn row gap-1">
-                <button type="button" class="btn btn-warning col">Bookmark</button>
-                <button type="button" class="btn btn-light col " data-bs-toggle="modal" data-bs-target="#myModal" style="color: #0D75FF;">More info</button>
-                <button type="button" class="btn btn-secondary col-12 ">Read</button>
+            <div class="books-market__btn row gap-1  ">
+                <button type="button" class="bookmark-btn btn btn-warning col">Bookmark</button>
+                <button type="button" class="more-info-btn btn btn-light col " data-bs-toggle="modal" data-bs-target="#myModal" style="color: #0D75FF;">More info</button>
+                <a href="" type="button" class="read-btn btn btn-secondary col-12 ">Read</a>
             </div>
         </div>
     </template>
@@ -242,13 +213,14 @@
             <div class="more-information__footer d-flex justify-content-end">
                 <button class="more-information__footer-btn" type="button">Read</button>
             </div>
-        </template>
-        
-        
-        
-        <script src="./js/bootstrap.js"></script>
-        <script src="./js/main.js"></script>
-        
-        <!-- https://picsum.photos/200/300 -->
-    </body>
-    </html>
+        </div>
+    </template>
+    
+    
+    
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
+    
+    <!-- https://picsum.photos/200/300 -->
+</body>
+</html>
