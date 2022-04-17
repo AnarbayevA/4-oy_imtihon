@@ -1,0 +1,12 @@
+.book-market__container {
+  background-color: aquamarine;
+  padding: 40px;
+}
+
+.book-market__image-wrapper {
+  max-width: 282px;
+  width: 100%;
+  padding: 13px 15px 13px 21px;
+  background-color: #FFF;
+}
+/*# sourceMappingURL=book-market.css.map */

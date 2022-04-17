@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGG,AAAD,uBAAY,CAAC;EAEH,gBAAgB,EAAE,UAAU;EAC5B,OAAO,EAAE,IAAI;CAEtB;;AAWM,AAAD,2BAAgB,CAAA;EAEZ,SAAS,EAAE,KAAK;EAChB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,mBAAmB;EAC5B,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "../scss/all_blocks/book-market.scss"
+    ],
+    "names": [],
+    "file": "book-market.css"
+}

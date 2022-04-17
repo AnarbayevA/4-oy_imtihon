@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./../fonts/rubik-v19-latin-regular.woff2') format('woff2'), 
+         url('./../fonts/rubik-v19-latin-regular.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('./../fonts/rubik-v19-latin-500.woff2') format('woff2'),
+         url('./../fonts/rubik-v19-latin-500.woff') format('woff'); 
+  }
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./../fonts/noto-sans-v26-latin-regular.woff2') format('woff2'),
+         url('./../fonts/noto-sans-v26-latin-regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('./../fonts/noto-sans-v26-latin-500.woff2') format('woff2'),
+         url('./../fonts/noto-sans-v26-latin-500.woff') format('woff'); 
+  }

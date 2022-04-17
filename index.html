@@ -5,87 +5,250 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body class="body">
     <header class="header">
-        <header class="header__container container">
+        <div class="header__container container">
+            <div class="header__wrapper d-flex justify-content-between align-items-center">
+                <div class="header__left-side d-flex align-items-center">
+                    <a href="#">
+                        <img class="header__logo-image" src="./images/logo-site.svg" alt="Book shalter logo" width="226" height="44">
+                    </a>
+                    
+                    <form class="header__form">
+                        <div class="input-group ">
+                            <input class="header__search-logo form-control " id="search_input" type="text"  placeholder="Search books">
+                        </div>
+                    </form>
+                </div>
+                
+                <img class="header__darkmode-image" src="./images/sun.svg" alt="sun image" width="23" height="23" >
+            </div>
             
-        </header>
+        </div>
     </header>
     
     <main class="main">
-        <div class="hero hero__container">
-            
+        <div class="hero container">
+            <div class="hero__wrapper d-flex align-items-center justify-content-between">
+                <p class="hero__book-result">
+                    Showing <span class="hero__result-number">18</span> Result
+                </p>
+                
+                <button type="button" class="hero__btn btn btn-secondary">
+                    <img class="hero__btn-image"  src="./images/calendar.svg" style="vertical-align: middle;"  alt=""> 
+                    <p class="hero__btn-text p-0 m-0"> Order by newest</p> 
+                </button>
+                
+            </div>
         </div>
+        
+        <div class="book-shop container" style="display: flex;">
+            <div class="bookmark">
+                <div class="bookmark__heading-wrapper">
+                    <h2 class="bookmark__heading">Bookmarks</h2>
+                    <p class="bookmark__text">If you don't like to read, you haven't found the right book</p>
+                </div>
+                
+                <div class="bookmark__books">
+                    <div class="bookmark__inner">
+                        <div class="bookmark__text-wrapper">
+                            <p class="bookmark__book-name">Python</p>
+                            <p class="bookmark__outhor-name">David M. Beazley</p>
+                        </div>
+                        
+                        <div class="bookmark__image-wrapper">
+                            <button class="bookmark__book-btn" type="button">
+                                <img class="bookmark__book-image" width="24" height="24" src="./images/book.svg" alt="">
+                            </button>
+                            
+                            <button class="bookmark__delete-btn d-inline-block" type="button">
+                                <img class="bookmark__delete-image" width="24" height="24" src="./images/delete.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="books-market">
+                <div class="books-market__top d-flex row gap-4 ">
+                    <div class="books-market__wrapper col-4">
+                        <div class="books-market__image-wrapper">
+                            <img class="books-market__book-image" src="https://picsum.photos/200/200" alt="">
+                        </div>
+                        
+                        <div class="books-market__info-books">
+                            <p class="books-market__book-name">Python</p>
+                            <p class="books-market__book-outhor">David M. Beazley</p>
+                            <p class="books-market__book-year">2009</p>
+                        </div>
+                        
+                        <div class="books-market__btn row gap-1">
+                            <button type="button" class="btn btn-warning col">Bookmark</button>
+                            <button type="button" class="btn btn-light col " data-bs-toggle="modal" data-bs-target="#myModal" style="color: #0D75FF;">More info</button>
+                            <button type="button" class="btn btn-secondary col-12 ">Read</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                <ul class="books-market__pagination pagination pagination-sm justify-content-center">
+                    <li class="books-market__page page-item"><a class="page-link" href="#"><img src="./images/arrow-left.svg" alt=""></a></li>
+                    <li class="books-market__page page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="books-market__page page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="books-market__page page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="books-market__page page-item"><a class="page-link" href="#">9</a></li>
+                    <li class="books-market__page page-item"><a class="page-link" href="#">10</a></li>
+                    <li class="books-market__page page-item"><a class="page-link" href="#"><img src="./images/arrow-right.svg" alt=""></a></li>
+                </ul>
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="more-information container">
+                            <div class="more-information__header d-flex align-items-baseline justify-content-between">
+                                <h2 class="more-information__name">Python</h2>
+                                <button class="more-information__exit-button btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            
+                            <div class="more-information__main" >
+                                <div class="more-information__book-image-wrapper">
+                                    <img class="more-information__book-image" src="https://picsum.photos/230/300" alt="">
+                                </div>
+                                
+                                <p class="more-information__text">
+                                    Culpa nulla pariatur cupidatat nisi incididunt ea do ipsum. Incididunt quis mollit elit commodo cillum eiusmod reprehenderit labore irure. Cillum et incididunt et nostrud exercitation quis aute laboris non ut adipisicing. Laboris ad minim aute nulla proident deserunt velit anim sunt aliquip ut sit. Exercitation aliquip ullamco officia non aliqua. Sint deserunt aliquip veniam id eiusmod sit consectetur mollit ea aliqua officia consequat. Magna non mollit nisi est commodo voluptate aute id. Deserunt nostrud id do in nisi mollit deserunt non. Pariatur fugiat cillum irure elit sint nisi ad ipsum culpa deserunt cupidatat esse consequat laboris. Id aliquip non consectetur esse proident duis Lorem.
+                                </p>
+                                
+                                <p class="more-information__author first-data">
+                                    Author: <span class="more-information__author-name more-information__second-data">Jamal Kasper</span>
+                                </p>
+                                
+                                <p class="more-information__author first-data">
+                                    Published: <span class="more-information__book-year more-information__second-data">2019</span>
+                                </p>
+                                
+                                <p class="more-information__author first-data">
+                                    Publishers: <span class="more-information__publishers-name more-information__second-data">Hollman</span>
+                                </p>
+                                
+                                <p class="more-information__author first-data">
+                                    Categories: <span class="more-information__categories-name more-information__second-data">Computers</span>
+                                </p>
+                                
+                                <p class="more-information__author first-data">
+                                    Pages-count: <span class="more-information__pages more-information__second-data">346</span>
+                                </p>
+                            </div>
+                            
+                            
+                            <div class="more-information__footer d-flex justify-content-end">
+                                <button class="more-information__footer-btn" type="button">Read</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
     
-    <footer class="footer">
-        <div class="footer__container container">
+    <template id="bookmark-template">
+        <div class="bookmark__inner">
+            <div class="bookmark__text-wrapper">
+                <p class="bookmark__book-name">Python</p>
+                <p class="bookmark__outhor-name">David M. Beazley</p>
+            </div>
             
+            <div class="bookmark__image-wrapper">
+                <button class="bookmark__book-btn" type="button">
+                    <img class="bookmark__book-image" width="24" height="24" src="./images/book.svg" alt="">
+                </button>
+                
+                <button class="bookmark__delete-btn d-inline-block" type="button">
+                    <img class="bookmark__delete-image" width="24" height="24" src="./images/delete.svg" alt="">
+                </button>
+            </div>
         </div>
-    </footer>
+    </template>
     
-    <script>
+    <template id="books-market-template">
+        <div class="books-market__wrapper col-4">
+            <div class="books-market__image-wrapper">
+                <img class="books-market__book-image" src="https://picsum.photos/200/200" alt="">
+            </div>
+            
+            <div class="books-market__info-books">
+                <p class="books-market__book-name">Python</p>
+                <p class="books-market__book-outhor">David M. Beazley</p>
+                <p class="books-market__book-year">2009</p>
+            </div>
+            
+            <div class="books-market__btn row gap-1">
+                <button type="button" class="btn btn-warning col">Bookmark</button>
+                <button type="button" class="btn btn-light col " data-bs-toggle="modal" data-bs-target="#myModal" style="color: #0D75FF;">More info</button>
+                <button type="button" class="btn btn-secondary col-12 ">Read</button>
+            </div>
+        </div>
+    </template>
+    
+    <template id="more-information-template">
+        <div class="more-information container">
+            <div class="more-information__header d-flex align-items-baseline justify-content-between">
+                <h2 class="more-information__name">Python</h2>
+                <button class="more-information__exit-button btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            
+            <div class="more-information__main" >
+                <div class="more-information__book-image-wrapper">
+                    <img class="more-information__book-image" src="https://picsum.photos/230/300" alt="">
+                </div>
+                
+                <p class="more-information__text">
+                    Culpa nulla pariatur cupidatat nisi incididunt ea do ipsum. Incididunt quis mollit elit commodo cillum eiusmod reprehenderit labore irure. Cillum et incididunt et nostrud exercitation quis aute laboris non ut adipisicing. Laboris ad minim aute nulla proident deserunt velit anim sunt aliquip ut sit. Exercitation aliquip ullamco officia non aliqua. Sint deserunt aliquip veniam id eiusmod sit consectetur mollit ea aliqua officia consequat. Magna non mollit nisi est commodo voluptate aute id. Deserunt nostrud id do in nisi mollit deserunt non. Pariatur fugiat cillum irure elit sint nisi ad ipsum culpa deserunt cupidatat esse consequat laboris. Id aliquip non consectetur esse proident duis Lorem.
+                </p>
+                
+                <p class="more-information__author first-data">
+                    Author: <span class="more-information__author-name more-information__second-data">Jamal Kasper</span>
+                </p>
+                
+                <p class="more-information__author first-data">
+                    Published: <span class="more-information__book-year more-information__second-data">2019</span>
+                </p>
+                
+                <p class="more-information__author first-data">
+                    Publishers: <span class="more-information__publishers-name more-information__second-data">Hollman</span>
+                </p>
+                
+                <p class="more-information__author first-data">
+                    Categories: <span class="more-information__categories-name more-information__second-data">Computers</span>
+                </p>
+                
+                <p class="more-information__author first-data">
+                    Pages-count: <span class="more-information__pages more-information__second-data">346</span>
+                </p>
+            </div>
+            
+            
+            <div class="more-information__footer d-flex justify-content-end">
+                <button class="more-information__footer-btn" type="button">Read</button>
+            </div>
+        </template>
         
-    </script>
-    
-
-</body>
-</html>
-
-<!-- <picture>
-    <source
-    type="image/webp"
-    media="(max-width: 425px)" 
-    srcset=
-        "./images/coffee-mobile.webp 1x,
-         ./images/coffee-mobile@2x.webp 2x
-        "
-    >
-    
-    <source
-    type="image/webp"
-    media="(max-width: 768px)" 
-    srcset=
-        "./images/coffee-tablet.webp 1x,
-         ./images/coffee-tablet@2x.webp 2x
-        "
-    >
-
-    <source
-    type="image/webp" 
-    srcset=
-        "./images/coffee.webp 1x,
-         ./images/coffee@2x.webp 2x
-        "
-    >
-
-
-
-    <source
-    type="image/webp"
-    media="(max-width: 425px)" 
-    srcset=
-        "./images/coffee-mobile.jpg 1x,
-         ./images/coffee-mobile@2x.jpg 2x
-        "
-    >
-    
-    <source
-    media="(max-width: 768px)" 
-    srcset=
-        "./images/coffee-tablet.jpg 1x,
-         ./images/coffee-tablet@2x.jpg 2x
-        "
-    >
-
-    <img 
-    src=""
-    srcset="./image/coffee@2x.jpg 1x, ./image/coffee@2x.jpg" 
-    alt=""
-    width=""
-    height=""
-    >
-</picture> -->
-
+        
+        
+        <script src="./js/bootstrap.js"></script>
+        <script src="./js/main.js"></script>
+        
+        <!-- https://picsum.photos/200/300 -->
+    </body>
+    </html>

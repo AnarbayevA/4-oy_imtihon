@@ -1,0 +1,81 @@
+.books-market {
+	max-width: 991px;
+	width: 100%;
+	background-color: #E5E5E5;
+	padding: 40px;
+	
+	&__top{
+		margin-bottom: 33px;
+	}
+	
+	&__wrapper {
+		max-width: 282px;
+		width: 100%;
+		background-color: #FFF;
+		padding: 13px 15px 13px 21px;
+		box-shadow: 0 0 3px 0px black;
+		
+	}
+	
+	&__image-wrapper {
+		margin-bottom: 19px;
+		padding: 18px 28px 18px 20px;
+		background-color: #E5E5E5;
+		border-radius: 5px;
+		
+	}
+	
+	&__book-image{
+		width: 200px;
+		height: 200px;
+		border-radius: 5px;
+		
+	}
+	
+	&__info-books {
+		margin-bottom: 10px;
+	}
+	
+	&__book-name {
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+	}
+	
+	&__book-outhor, &__book-year  {
+		font-family: 'Noto Sans';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 18px;
+		color: #757881;
+	}
+	
+	&__book-year {
+		
+	}
+	
+	&__btn {
+	}
+	
+	&__pagination {
+		
+	}
+	
+	&__page {
+		
+	}
+}
+
+.page-link{
+	min-width: 32px;
+	font-family: 'SF Pro Text';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #212B36;
+}

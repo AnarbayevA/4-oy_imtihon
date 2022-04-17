@@ -1,0 +1,89 @@
+
+
+.bookmark {
+    max-width: 268px;
+    width: 100%;
+    padding: 25px 36px 25px 36px;
+
+    &__heading-wrapper {
+        margin-bottom: 25px;
+    }
+
+    &__heading {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__text {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 155.6%;
+        color: #000000;
+    }
+
+    &__inner {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        padding: 15px 11px 15px 10px;
+        background-color: #F8FAFD;
+        border-radius: 4px;
+    }
+
+    &__text-wrapper {
+        background-color: #F8FAFD;
+        border-radius: 4px;
+    }
+
+    &__book-name {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__outhor-name {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        color: #757881;
+    }
+
+    &__image-wrapper {
+    }
+
+    &__book-btn{
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    &__delete-btn{
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+
+    }
+
+    &__book-image{
+        width: 24px;
+        height: 24px;
+    }
+
+    &__delete-image{
+        width: 24px;
+        height: 24px;
+    }
+}

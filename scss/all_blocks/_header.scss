@@ -1,11 +1,61 @@
-@media only screen and (max-width:1350px) {
-    .header{
+body{
+    font-family: 'Rubik', 'Noto Sans';
+}
 
-        &__container{
-            
-        }
-
-        
-    }
+.header{
     
 }
+
+.header__search-logo{
+    
+}
+
+.header {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    
+    &__container {
+        padding-top: 14px;
+        padding-bottom: 12px;
+    }
+    
+    &__wrapper {
+    }
+    
+    &__left-side {
+        width: 100%;
+    }
+    
+    &__logo-image {
+        margin-right: 56px;
+    }
+    
+    &__form {
+        max-width: 670px;
+        width: 100%;
+    }
+    
+    &__search-logo {
+        max-width: 670px;
+        width: 100%;
+        padding-left: 40px;
+        border-radius: 30px;
+        background-image: url(./../../images/lupa.svg);
+        background-repeat: no-repeat;
+        background-position: 10px 8px;
+        background-color: #E3E6EB;
+
+    }
+
+    &__search-logo::selection{
+        background-image: none;
+    }
+    
+    &__darkmode-image {
+        margin-right: 41px;
+        vertical-align: middle;
+    }
+}
+
+
+

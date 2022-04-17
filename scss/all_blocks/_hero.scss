@@ -1,10 +1,46 @@
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-  
-  /* Retina-specific stuff here */
+.hero {
+
+  &__wrapper {
+    padding-left: 298px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-top: 2px solid aquamarine;
+    border-bottom: 2px solid aquamarine;
+  }
+
+  &__book-result {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222531;
+  }
+
+  &__result-number {
+  }
+
+  &__btn {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin-right: 41px;
+    background-color: #A6B0C3;
+    border: none;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  }
+
+  &__btn-image {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  &__btn-text{
+    
+  }
 }
