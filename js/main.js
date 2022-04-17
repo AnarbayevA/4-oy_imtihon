@@ -144,3 +144,30 @@ elBookmarkWrapper.addEventListener("click", function(evt){
 })
 
 
+elBooksMarketTemplateWrapper.addEventListener("click", function(evt){
+    let moreInformationId = evt.target.dataset.bookmarkBtnId;
+
+    if(moreInformationId){
+        ;(async function(){
+            let information = await fetch(`https://www.googleapis.com/books/v1/volumes/${moreInformationId}`);
+            
+            let data = await information.json();
+            let info = data.volumeInfo
+
+
+            document.querySelector(".more-information__name").textContent = info.title
+            document.querySelector(".more-information__book-image").src = info.imageLinks.thumbnail
+            document.querySelector(".more-information__text").textContent = info.description
+            document.querySelector(".more-information__author-name").textContent = info.authors
+            document.querySelector(".more-information__book-year").textContent = info.publishedDate.slice(0,4)
+            document.querySelector(".more-information__publishers-name").textContent = info.publisher
+            document.querySelector(".more-information__categories-name").textContent = info.categories 
+            document.querySelector(".more-information__pages").textContent = info.printedPageCount
+            document.querySelector(".more-information__footer-btn").href= info.previewLink
+        
+            
+            
+        })();
+    }
+})
+
